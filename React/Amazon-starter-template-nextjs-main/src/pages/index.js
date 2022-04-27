@@ -8,6 +8,10 @@ export default function Home({ products }) {
     <div className="bg-gray-100">
       <Head>
         <title>Lotus HandiCrafts</title>
+        <meta
+          name="google-site-verification"
+          content="-GUr-oV47ak_o9xRZq3rSFC02tp5hfKJdqO8IYTQcYc"
+        />
       </Head>
 
       <Header />
