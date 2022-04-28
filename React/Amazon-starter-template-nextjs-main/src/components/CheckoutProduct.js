@@ -46,7 +46,7 @@ function CheckoutProduct({
             ))}
         </div>
         <p className="text-xs mt-2 mb-2 line-clamp-3">{description}</p>
-        <CurrencyFormat value={price} prefix="$" displayType={"text"} />
+        <CurrencyFormat value={price} prefix="₹" displayType={"text"} />
         {hasPrime && (
           <div className="flex items-center space-x-2">
             <img
