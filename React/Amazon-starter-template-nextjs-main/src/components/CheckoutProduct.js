@@ -4,6 +4,7 @@ import React from "react";
 import CurrencyFormat from "react-currency-format";
 import { useDispatch } from "react-redux";
 import { addToBasket, removeFromBasket } from "../slices/basketSlice";
+
 function CheckoutProduct({
   id,
   title,

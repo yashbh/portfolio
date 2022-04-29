@@ -1,4 +1,5 @@
 import { CheckCircleIcon } from "@heroicons/react/solid";
+import { getSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import React from "react";
 import Header from "../components/Header";
@@ -34,3 +35,13 @@ function success() {
 }
 
 export default success;
+
+export async function getServerSideProps(context) {
+  const session = await getSession(context);
+
+  return {
+    props: {
+      session,
+    },
+  };
+}

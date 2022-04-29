@@ -4,6 +4,8 @@ import { StarIcon } from "@heroicons/react/solid";
 import CurrencyFormat from "react-currency-format";
 import { useDispatch } from "react-redux";
 import { addToBasket } from "../slices/basketSlice";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const MAX_RATING = 5;
 const MIN_RATING = 1;
@@ -13,6 +15,17 @@ function Product({ id, title, price, description, category, image }) {
     Math.floor(Math.random() * (MAX_RATING - MIN_RATING + 1)) + MIN_RATING
   );
   const dispatch = useDispatch();
+  const notify = () =>
+    toast.success("Added Item to Basket", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: 0,
+    });
+
   const [hasPrime, setHasPrime] = useState(Math.random() < 0.5);
 
   const addItemToBasket = () => {
@@ -54,9 +67,25 @@ function Product({ id, title, price, description, category, image }) {
           <p className="text-xs text-gray-500">Free Next-day Delivery</p>
         </div>
       )}
-      <button onClick={addItemToBasket} className="mt-auto button">
+      <button
+        onClick={() => {
+          addItemToBasket();
+          notify();
+        }}
+        className="mt-auto button"
+      >
         Add to Basket
       </button>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </div>
   );
 }
