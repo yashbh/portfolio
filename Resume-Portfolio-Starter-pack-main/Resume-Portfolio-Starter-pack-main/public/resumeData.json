@@ -2,7 +2,7 @@
   "main": {
     "name": "Yash Bhati",
     "occupation": "Front-end Developer",
-    "description": "Code Day and Night in Reactgit ",
+    "description": "Code Day and Night in React",
     "image": "profile-yash.jpg",
     "bio": "Hello Everyone , I am Yash , I'm coding since 3 years and its been a awesome journey so far . I work Professionally as a Frontend Developer , I code primarily in React JS, Angular . I also have a experince working with creating REST API's in Java SpringBoot. I also have knowledge working with Next JS. I like to Code Programming Challenges in Python and Javascript. My hobbies are Singing and talking about Startups.",
     "contactmessage": "Get in touch with me",
@@ -94,19 +94,19 @@
         "title": "Amazon Clone (NEXT JS and STRIPE Payment Gateway)",
         "category": "",
         "image": "amazon.jpg",
-        "url": "https://youtu.be/1kGISk5ft2w"
+        "url": "https://www.yashbhati.com/"
       },
       {
         "title": "SnapChat Clone (React JS and Redux)",
         "category": "",
         "image": "snapchat.jpg",
-        "url": "https://youtu.be/b7nrXjS6Dqs"
+        "url": "https://snapchat-clone-6474f.web.app/"
       },
       {
         "title": "LinkedIn Clone (React JS and Redux)",
         "category": "",
         "image": "linkedin.jpg",
-        "url": "https://youtu.be/QaYts9sPmcY"
+        "url": "https://linkedin-clone-13d7d.web.app/"
       }
     ]
   }
